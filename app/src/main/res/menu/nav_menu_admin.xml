@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_users" android:title="Пользователи" android:icon="@android:drawable/ic_menu_manage"/>
+    <item android:id="@+id/nav_stats" android:title="Статистика" android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/nav_profile" android:title="Профиль" android:icon="@android:drawable/ic_menu_myplaces"/>
+</menu>

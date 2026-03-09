@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <!-- Аватар + имя -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:cardCornerRadius="16dp"
+            app:cardElevation="3dp" android:layout_marginBottom="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="24dp" android:gravity="center">
+                <!-- Круг-аватар -->
+                <FrameLayout android:layout_width="80dp" android:layout_height="80dp"
+                    android:background="@color/accent" android:layout_marginBottom="12dp">
+                    <TextView android:id="@+id/tvInitials"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="center" android:text="?"
+                        android:textSize="30sp" android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </FrameLayout>
+                <TextView android:id="@+id/tvName"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="20sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tvRole"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="@color/white"
+                    android:paddingStart="12dp" android:paddingEnd="12dp"
+                    android:paddingTop="3dp" android:paddingBottom="3dp"
+                    android:background="@color/primary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Кнопки -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:cardCornerRadius="16dp"
+            app:cardElevation="2dp" android:layout_marginBottom="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="✏️  Редактировать профиль"
+                    app:backgroundTint="@color/accent" android:textColor="@color/white"
+                    app:cornerRadius="12dp"/>
+                <!-- Change password button removed per requirements -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Выход -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="Выйти из аккаунта"
+            app:backgroundTint="#FFCDD2" android:textColor="#B71C1C"
+            app:cornerRadius="12dp"/>
+    </LinearLayout>
+</ScrollView>
