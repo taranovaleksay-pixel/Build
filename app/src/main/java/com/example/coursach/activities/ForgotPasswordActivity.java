@@ -133,6 +133,9 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
 
 
+
+
+
                 if (userId.isEmpty()) {
                     ui(() -> { setLoading(false); toast("Пользователь с таким email не найден"); });
                     return;
@@ -174,6 +177,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void setLoading(boolean b) {
         progressBar.setVisibility(b ? View.VISIBLE : View.GONE);
