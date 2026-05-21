@@ -28,4 +28,6 @@ public class ClientMainActivity extends AppCompatActivity {
             nav.setSelectedItemId(R.id.nav_catalog);
         }
     }
+
+
 }
