@@ -31,6 +31,9 @@ public class SplashActivity extends AppCompatActivity {
                         i = new Intent(this, ManagerActivity.class);
                         break;
                     default:
+
+
+
                         i = new Intent(this, ClientMainActivity.class);
                 }
             }

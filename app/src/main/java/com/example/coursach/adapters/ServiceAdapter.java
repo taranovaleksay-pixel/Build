@@ -24,6 +24,9 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.VH> {
         h.itemView.setOnClickListener(v->l.onClick(s));}
     @Override public int getItemCount(){return items.size();}
     static class VH extends RecyclerView.ViewHolder {
+
+
+
         TextView tvTitle,tvCategory,tvPrice,tvDesc,tvRating;
         VH(@NonNull View v){super(v);tvTitle=v.findViewById(R.id.tvTitle);tvCategory=v.findViewById(R.id.tvCategory);
             tvPrice=v.findViewById(R.id.tvPrice);tvDesc=v.findViewById(R.id.tvDescription);tvRating=v.findViewById(R.id.tvRating);}

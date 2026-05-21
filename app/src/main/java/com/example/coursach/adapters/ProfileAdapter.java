@@ -22,6 +22,8 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.VH> {
         h.tvStatus.setTextColor(p.isBlocked()?0xFFB71C1C:0xFF2E7D32);
         h.itemView.setOnClickListener(v->l.onClick(p));}
     @Override public int getItemCount(){return items.size();}
+
+
     static class VH extends RecyclerView.ViewHolder{
         TextView tvName,tvEmail,tvRole,tvStatus;
         VH(@NonNull View v){super(v);tvName=v.findViewById(R.id.tvName);tvEmail=v.findViewById(R.id.tvEmail);
