@@ -1,10 +1,12 @@
-package com.example.coursach.utils;
+package coursach;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
-import static org.junit.Assert.*;
+
+import com.example.coursach.utils.BuildHubUtils;
 
 public class BuildHubUnitTest {
 

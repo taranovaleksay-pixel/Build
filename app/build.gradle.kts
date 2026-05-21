@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.coursach"
-    compileSdk = 36
+    compileSdk = 21
 
     defaultConfig {
         applicationId = "com.example.coursach"
-        minSdk = 33
-        targetSdk = 36
+        minSdk = 21
+        targetSdk = 21
         versionCode = 1
         versionName = "1.0"
 

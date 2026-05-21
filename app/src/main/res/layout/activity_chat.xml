@@ -11,7 +11,6 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Статус и сумма заказа -->
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="horizontal" android:background="@color/surface"
         android:paddingStart="16dp" android:paddingEnd="16dp"
@@ -29,7 +28,6 @@
             android:textColor="@color/accent"/>
     </LinearLayout>
 
-    <!-- Кнопки действий -->
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="horizontal" android:background="@color/surface"
         android:paddingStart="8dp" android:paddingEnd="8dp"

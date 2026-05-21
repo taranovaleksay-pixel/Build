@@ -52,7 +52,9 @@ public class LoginActivity extends AppCompatActivity {
                         if (code.equals("email_not_confirmed")) errorMsg = "Подтвердите email перед входом";
                         else if (!desc.isEmpty() && !desc.contains("Invalid login")) errorMsg = desc;
                         android.util.Log.e("LOGIN_ERROR", "Code=" + code + " Desc=" + desc);
-                    } catch (Exception ignored) {}
+                    } catch (Exception e) {
+                        e.getStackTrace();
+                    }
                     final String msg = errorMsg;
                     ui(() -> { setLoading(false); toast(msg); });
                     return;
