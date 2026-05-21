@@ -36,6 +36,8 @@ public class BuildHubUnitTest {
     }
 
     @Test
+
+
     public void filterByQuery_findsInTitleAndDescription() {
         List<BuildHubUtils.ServiceModel> result = BuildHubUtils.filter(services, "фундамент", "Все");
         Assert.assertEquals(1, result.size());

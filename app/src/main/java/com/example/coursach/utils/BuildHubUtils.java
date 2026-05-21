@@ -14,6 +14,8 @@ public class BuildHubUtils {
             this.price = price;
         }
     }
+
+
     public static List<ServiceModel> filter(List<ServiceModel> all, String query, String category) {
         String q = query == null ? "" : query.toLowerCase().trim();
         List<ServiceModel> result = new ArrayList<>();
